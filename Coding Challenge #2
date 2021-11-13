@@ -1,0 +1,15 @@
+//Coding Challenge #2
+
+if (bmiJohn1 > bmiMark1) {
+    console.log(`John's BMI is ${bmiJohn1} and Mark's BMI is ${bmiMark1}, which means John has a greater BMI than Mark!`);
+}
+else {
+    console.log(`Mark has a BMI of ${bmiMark1} and John has a BMI of ${bmiJohn1}, meaning Mark has a higher BMI than John!`);
+}
+
+if (bmiJohn2 > bmiMark2) {
+    console.log(`John's BMI is ${bmiJohn2} and Mark's BMI is ${bmiMark2}, which means John has a greater BMI than Mark!`);
+}
+else {
+    console.log(`Mark has a BMI of ${bmiMark2} and John has a BMI of ${bmiJohn2}, meaning Mark has a higher BMI than John!`);
+}
