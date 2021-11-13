@@ -1,0 +1,16 @@
+//Coding Challenge #1
+
+// Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula:
+
+// BMI = mass / height ** 2   or   mass / (height * height) (mass in kg and height in meter).
+
+//Test data 1:
+const weightMark1 = 78; //Mark weights 78kg
+const heightMark1 = 1.69; //Mark's height is 1.69m tall
+const weightJohn1 = 92; //John weights 92kg
+const heightJohn1 = 1.95; //John's height is 1.95m tall
+
+//1. Store Mark's and John's mass and height in variables
+// console.log("Question 1. Store Mark's and John's mass and height in variables");
+// console.log("\n Mark weights: " + weightMark1 + 'kg \n and is ' + heightMark1 + ' centimeters tall');
+// console.log('\n John weights: ' + weightJohn1 + 'kg \n and is ' + heightJohn1 + ' centimeters tall');
