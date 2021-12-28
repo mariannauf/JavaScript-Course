@@ -1,0 +1,90 @@
+//Coding Challenge #3
+/*There are two gymnastics teams, Dolphins and Koalas. They compete against each
+other 3 times. The winner with the highest average score wins a trophy!
+Your tasks:
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that
+as well (draw means they have the same average score) 
+
+Test data:
+* Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110 */
+
+const playOneDolphins = 96;
+const playTwoDolphins = 108;
+const playThreeDolphins = 89;
+
+const playOneKoalas = 88;
+const playTwoKoalas = 91;
+const playThreeKoalas = 110;
+
+//1. Calculate the average score for each team, using the test data below
+
+const avgDolphins = (playOneDolphins + playTwoDolphins + playThreeDolphins) / 3;
+
+const avgKoalas = (playOneKoalas + playTwoKoalas + playThreeKoalas) / 3;
+
+//2. Compare the team's average scores to determine the winner of the competition,
+//and print it to the console. Don't forget that there can be a draw, so test for that
+//as well (draw means they have the same average score) 
+
+if (avgDolphins > avgKoalas) {
+    console.log(`The DOLPHINS have WON the TROPHY!!!`);
+}
+else if (avgDolphins === avgKoalas) {
+    console.log(`There is a DRAW on the competition! BOTH of the teams get the Trophy!`);
+}
+else if (avgKoalas > avgDolphins) {
+    console.log(`The KOALAS have WON the TROPHY!!!`);
+}
+
+// Bonus 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
+
+const playOneDolphins1 = 97;
+const playTwoDolphins1 = 112;
+const playThreeDolphins1 = 101;
+
+const playOneKoalas1 = 109;
+const playTwoKoalas1 = 95;
+const playThreeKoalas1 = 123;
+
+const avgDolphins1 = (playOneDolphins1 + playTwoDolphins1 + playThreeDolphins1) / 3;
+
+const avgKoalas1 = (playOneKoalas1 + playTwoKoalas1 + playThreeKoalas1) / 3;
+
+if (avgDolphins1 > avgKoalas1 && avgDolphins1 >= 100) {
+    console.log(`The DOLPHINS have WON the TROPHY!!!`);
+}
+else if (avgDolphins1 === avgKoalas1) {
+    console.log(`There is a DRAW on the competition! BOTH of the teams get the Trophy!`);
+}
+else if (avgKoalas1 > avgDolphins1 && avgKoalas1 >= 100) {
+    console.log(`The KOALAS have WON the TROPHY!!!`);
+}
+
+// Bonus 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy
+
+const playOneDolphins2 = 97;
+const playTwoDolphins2 = 112;
+const playThreeDolphins2 = 101;
+
+const playOneKoalas2 = 109;
+const playTwoKoalas2 = 95;
+const playThreeKoalas2 = 106;
+
+const avgDolphins2 = (playOneDolphins2 + playTwoDolphins2 + playThreeDolphins2) / 3;
+
+const avgKoalas2 = (playOneKoalas2 + playTwoKoalas2 + playThreeKoalas2) / 3;
+
+if (avgDolphins2 > avgKoalas2 && avgDolphins2 > 100) {
+    console.log(`The DOLPHINS have WON the TROPHY!!!`);
+}
+else if (avgDolphins2 === avgKoalas2 && avgKoalas2 >= 100 && avgDolphins2 >= 100) {
+    console.log(`There is a DRAW on the competition! BOTH of the teams get the Trophy!`);
+}
+else if (avgKoalas2 > avgDolphins2 && avgKoalas2 > 100) {
+    console.log(`The KOALAS have WON the TROPHY!!!`);
+}
+else {
+    console.log(`NO ONE WINS THE TROPHY!!!`);
+}
